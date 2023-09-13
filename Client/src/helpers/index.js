@@ -13,7 +13,7 @@ export function validar(input) {
     errors.password = "Password must contain a number";
   }
   if (input.password.length < 6 || input.password.length > 10) {
-    errors.password = "Passwors must be between 6 and 10 characters";
+    errors.password = "Passwords must be between 6 and 10 characters";
   }
 
   return errors;

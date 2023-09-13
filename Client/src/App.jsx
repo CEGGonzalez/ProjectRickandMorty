@@ -9,6 +9,8 @@ import Detail from "./views/detail/Detail.jsx";
 import Login from "./views/Login/Login";
 import Favorites from "./views/favorites/Favorites";
 
+const URL = 'http://localhost:3001/rickandmorty/login/';
+
 function App() {
   const [characters, setCharacters] = useState([]);
   const { pathname } = useLocation();
@@ -17,33 +19,37 @@ function App() {
   const [access, setAccess] = useState(true);
   
  
-  const loginHandler = (userData) => {
+  const loginHandler = async (userData) => {
+    try {
     const { email, password } = userData;
-    const URL = 'http://localhost:3001/rickandmorty/login/';
-    axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
-       const { access } = data;
-       setAccess(access);
-       access && navigate('/home');
-    });
- }
+     const { data } = await axios(URL + `?email=${email}&password=${password}`)
+        const { access } = data;
+        setAccess(access);
+        access && navigate('/home');
+     
+    } catch (error) {
+      console.log(error.message)
+    }
+    }
 
    useEffect(() => {
     !access && navigate("/");
     //eslint-disable-next-line
   }, [access, navigate])
 
-  function searchHandler(id) {
-    axios(
-      `http://localhost:3001/rickandmorty/character/${id}`)
-      .then(response => response.data)
-      .then((data) => {
-      if (data.name) {
-        setCharacters((oldChars) => [...oldChars, data]);
-      } else {
-        window.alert("¡No hay personajes con este ID!");
-      }
-    });
-  }
+  const searchHandler = async (id) => {
+    try {
+      const { data } = await axios(`http://localhost:3001/rickandmorty/character/${id}`);
+        
+        if(data.name) {
+          setCharacters((oldChars) => [...oldChars, data]);
+        }
+
+    } catch (error) {
+     alert("¡No hay personajes con este ID!");
+      
+    }
+  };
 
   function closeHandler(id) {
       let filteredCharacters = characters.filter(
@@ -68,7 +74,6 @@ function App() {
       return;
     }
   }
-
         
   return (
     <div className='App'>

@@ -15,10 +15,10 @@ const About = () => {
       <div className="parent-container">
         <div className="container">
           <div className="titulo">
-            <h1>HOLA 🖐</h1>
+            <h1>Welcome 🖐</h1>
             <h2>Soy Carlos González</h2>
             <p>Este es mi proyecto integrador de Rick and Morty</p>
-            <p>Programar es Vivir</p>
+            <p>Gracias por su visita, espero sea de su agrado, esta hecha con mucha dedicacion</p>
             <img
               src={logo}
               alt=""
@@ -32,7 +32,7 @@ const About = () => {
           <a href="https://www.instagram.com/">
             <img src={instagram} alt="" width="40px" />
           </a>
-          <a href="https://www.twitter.com/orlidun">
+          <a href="https://www.twitter.com/">
             <img src={twitter} alt="" width="40px" />
           </a>
           <a href="https://github.com/CEGGonzalez">

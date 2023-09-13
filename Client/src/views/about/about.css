@@ -8,11 +8,10 @@
   margin-top: -6%;
   z-index: -4;
   padding: 1px;
-  position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  animation: gradient 5s ease infinite;
+  
   
 }
 
@@ -45,6 +44,10 @@
   max-height: 300px;
   text-align: center;
   border-color: rgb(26, 182, 68);
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
 }
 
 .titulo h1 {
@@ -54,7 +57,7 @@
   margin-top: -10%;
   top: 20px;
   text-align: center;
-  box-shadow: 8px;
+  box-shadow: 10px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 

@@ -10,17 +10,17 @@ export default function SearchBar({onSearch}) {
 
   return (
     <div className={styles.SearchBar}>
-      <input
+      <input className={styles.Imput}
         type="search"
         placeholder="Search Character"
         onChange={changeHandler}
       />
-      <button 
+      <button className={styles.boton}
         onClick={() => {
           onSearch(id);
         }}
       >
-      Agregar
+      To Add
       </button>
     </div>
   );

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { validar } from "../../helpers/index";
-import styles from "../Login/loginForm.module.css";
+import styles from "../Login/Form.module.css";
+// import rimage from "../../assets/morty.gif";
 
 function Login({ login }) {
   const [errors, setErrors] = useState({ email: "", password: "" });
@@ -33,56 +34,50 @@ function Login({ login }) {
       alert("Password Invalid");
     }
   }
-  
+
   return (
-    <div className={styles.contenedorForm}>
-       
+    <div className={styles.container}>
+      <form onSubmit={handleSubmit}>
         <div className={styles.tituloForm}>
           <h1>RICK & MORTY</h1>
         </div>
+        <div className={styles.contenedorInput}>
+          <label className={styles.textoLogin}> ✉ EMAIL </label>
+          <br />
+          <input
+            type="text"
+            placeholder="@email.com"
+            name="email"
+            value={userData.email}
+            onChange={handleChange}
+          />
+          {errors.email && <p className={styles.error}>{errors.email}</p>}
+        </div>
 
-        <form onSubmit={handleSubmit}>
-          <div className={styles.contenedorInput}>
-            <label className={styles.textoLogin}> ✉ EMAIL </label>
-            <br />
-            <input
-              type="text"
-              placeholder="@email.com"
-              name="email"
-              value={userData.email}
-              onChange={handleChange}
-            />
-            {errors.email && <p className={styles.error}>{errors.email}</p>}
-          </div>
-
-          <div className={styles.contenedorInput}>
-            <label className={styles.textoLogin}>
-              {" "}
-              🗝 PASSWORD
-              <span className={styles.mostrar} onClick={switchShown}>
-                {shown ? " ( Hide )" : " ( Show )"}
-              </span>
-            </label>
-            <br />
-            <input
-              type={shown ? "text" : "password"}
-              name="password"
-              placeholder="Password"
-              value={userData.password}
-              onChange={handleChange}
-            />
-            {errors.password && (
-                <p className={styles.error}>{errors.password}</p>
-                )}
-          </div>
-          <button className={styles.botonSubmit} type="submit">
-            SUBMIT
-          </button>
-        </form>
-        
-      </div>
-         
-   );
+        <div className={styles.contenedorInput}>
+          <label className={styles.textoLogin}>
+            {" "}
+            🗝 PASSWORD
+            <span className={styles.mostrar} onClick={switchShown}>
+              {shown ? " ( Hide )" : " ( Show )"}
+            </span>
+          </label>
+          <br />
+          <input
+            type={shown ? "text" : "password"}
+            name="password"
+            placeholder="Password"
+            value={userData.password}
+            onChange={handleChange}
+          />
+          {errors.password && <p className={styles.error}>{errors.password}</p>}
+        </div>
+        <button className={styles.boton} type="submit">
+          SUBMIT
+        </button>
+      </form>
+    </div>
+  );
 }
 
 export default Login;
