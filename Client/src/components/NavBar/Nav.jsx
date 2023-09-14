@@ -2,7 +2,7 @@ import SearchBar from "../SearchBar/SearchBar";
 import { Link } from "react-router-dom";
 import styles from "../NavBar/Nav.module.css";
 
-export default function Nav({ onSearch, randomize }) {
+export default function Nav({ onSearch,}) {
   return (
     <div className={styles.general}>
       {/* <nav2 className={styles.nav2}> */}
@@ -28,9 +28,7 @@ export default function Nav({ onSearch, randomize }) {
       <ul>
         <li>
           <SearchBar onSearch={onSearch} />
-          <button className={styles.random} onClick={randomize}>
-            Random
-          </button>
+          
         </li>
       </ul>
       {/* </nav2> */}

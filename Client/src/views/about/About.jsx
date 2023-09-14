@@ -35,7 +35,7 @@ const About = () => {
           <a href="https://www.twitter.com/">
             <img src={twitter} alt="" width="40px" />
           </a>
-          <a href="https://github.com/CEGGonzalez">
+          <a href="https://github.com/CEGGonzalez/ProjectRickandMorty">
             <img src={github} alt="" width="40px" />
           </a>
           <a href="https://www.linkedin.com/in/carlosenriquegonzalezgonzalez/">
