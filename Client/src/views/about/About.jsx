@@ -39,7 +39,7 @@ const About = () => {
             <img src={github} alt="" width="40px" />
           </a>
           <a href="https://www.linkedin.com/in/carlosenriquegonzalezgonzalez/">
-            <img src={linkedin} alt="" width="40px" />
+            <img src={linkedin} alt="" width="40px" target="blank"/>
           </a>
         </ul>
       </div>

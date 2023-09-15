@@ -26,8 +26,8 @@ html {
   }
   
 body {
-     background: radial-gradient(ellipse at center, #0e3d6c 0%,#000000 100%);
-     background-image: url(../src/assets/fondo.jpg);
+     /* background: radial-gradient(ellipse at center, #0e3d6c 0%,#000000 100%); */
+    background-image: url(../src/assets/fondo.jpg);
     background-repeat: no-repeat; 
     background-size: cover;
     scroll-behavior: smooth;
