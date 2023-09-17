@@ -8,6 +8,7 @@ import About from "./views/about/About.jsx";
 import Detail from "./views/detail/Detail.jsx";
 import Login from "./views/Login/Login";
 import Favorites from "./views/favorites/Favorites";
+import Footer from "./components/Footer/Footer";
 
 const URL = 'http://localhost:3001/rickandmorty/login/';
 
@@ -95,6 +96,7 @@ function App() {
         <Route path="/detail/:id" element={<Detail />} />
        
       </Routes>
+      <Footer />
       </div>
     
   );
