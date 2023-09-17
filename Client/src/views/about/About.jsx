@@ -26,17 +26,17 @@ const About = () => {
               style={{ borderRadius: '70%', marginTop: '35px', marginBottom: '10px' }}
             />
           </div>
-          <img className="rimage" src={rimage} alt="" />
+    <img className="rimage" src={rimage} alt="" width="40px"/>
         </div>
         <ul className="icons">
           <a href="https://www.instagram.com/">
-            <img src={instagram} alt="" width="40px" />
+            <img src={instagram} alt="" width="40px" target="blank"/>
           </a>
           <a href="https://www.twitter.com/">
-            <img src={twitter} alt="" width="40px" />
+            <img src={twitter} alt="" width="40px" target="blank"/>
           </a>
           <a href="https://github.com/CEGGonzalez/ProjectRickandMorty">
-            <img src={github} alt="" width="40px" />
+            <img src={github} alt="" width="40px"  target="blank"/>
           </a>
           <a href="https://www.linkedin.com/in/carlosenriquegonzalezgonzalez/">
             <img src={linkedin} alt="" width="40px" target="blank"/>

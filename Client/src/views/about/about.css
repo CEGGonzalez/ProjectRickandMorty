@@ -9,7 +9,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
- 
 }
 
 .container {
@@ -117,7 +116,7 @@
   width: 100%;
   max-width: 100%;
   height: auto;
-  margin-top: 50%;
+  margin-top: -10%;
 }
 
 @media (max-width: 768px) {

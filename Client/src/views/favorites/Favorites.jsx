@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { sortById, filterByGender, reset } from "../../redux/actions/actions";
 import Cards from "../../components/Cards/Cards";
 import Styles from './favorites.module.css'
+import { FaSync } from 'react-icons/fa'
 
 
 export default function Favorites() {
@@ -35,14 +36,14 @@ export default function Favorites() {
           </option>
         ))}
       </select>
-      <select placeholder="Sort" onChange={sortHandler}>
-        {["Ascendente", "Descendente"].map((order,) => (
+      <select className={Styles.select}  onChange={sortHandler}>
+        {["Ascendente", "Descendente"].map((order) => (
           <option key={order} value={order}>
             {order}
           </option>
         ))}
       </select>
-      <button  className={Styles.boton} onClick={resetHandler}>RESET</button>
+      <button  className={Styles.boton} onClick={resetHandler}>Random </button>
       <Cards characters={favorites} />
     </div>
     </div>

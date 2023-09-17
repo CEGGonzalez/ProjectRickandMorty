@@ -1,6 +1,5 @@
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import * as IoIcons from 'react-icons/io';
 import { FaInfoCircle } from 'react-icons/fa';
 
 export const SidebarData = [
@@ -30,9 +29,9 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Add',
-    path: '/add',
-    icon: <IoIcons.IoMdAddCircle />,
+    title: 'Logout',
+    path: '/',
+    icon: <FaIcons.FaSignOutAlt />,
     cName: 'nav-text'
   },
 ];

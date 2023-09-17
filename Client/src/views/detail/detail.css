@@ -4,7 +4,6 @@
   align-items: center;
   width: 100%;
   margin-top: -6%;
-  position: sticky;
   background-size: cover;
   background-position: center;
   animation: gradient 5s ease infinite;
@@ -15,18 +14,13 @@
 }
 
 .detail-container {
-  display: flex;
   width: 40rem;
-  padding: 20px;
-  left: 30%;
-  margin-bottom: 2rem;
+  padding: 15px;
+  margin-bottom: 1rem;
   margin-top: 35rem;
   justify-content: center;
   align-items: center;
   margin-left: 40rem;
-}
-
-.detail-container {
   transform: translate(-60%, -50%); 
   display: flex;
   border-radius: 30px;
@@ -63,7 +57,6 @@
   max-width: 70%;
 }
 
-
 @media (min-width: 480px) {
   .gif {
     margin-left: 10%; 
@@ -82,7 +75,6 @@
     margin-left: 20%; 
   }
 }
-
 
 @media (max-width: 768px) {
   .details {
