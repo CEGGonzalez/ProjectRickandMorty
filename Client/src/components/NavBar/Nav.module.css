@@ -11,7 +11,7 @@
   
   position: static;
   display: flex;
-  background: transparent;
+  background-color: transparent;
   box-shadow: 0 0 10px 0 rgba(4,255,0,1);
   z-index: 102;
   padding: 10px ;

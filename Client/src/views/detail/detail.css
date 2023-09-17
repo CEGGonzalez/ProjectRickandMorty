@@ -14,18 +14,6 @@
   padding: 0;
 }
 
-@keyframes gradient {
-  0% {
-    background: #7bff00;
-  }
-  50% {
-    background: #11957b;
-  }
-  100% {
-    background: #086b7c;
-  }
-} 
-
 .detail-container {
   display: flex;
   width: 40rem;
@@ -44,7 +32,7 @@
   border-radius: 30px;
   border: 3px solid rgba(105, 223, 140, 0.904);
   background-color: #bce6f3;
-  border-radius: 4000px;
+  border-radius: 40px;
   box-shadow: 30px 30px 18px rgba(228, 85, 14, 0.726);
   text-align: center;
   border-color: rgb(26, 182, 68);
@@ -105,13 +93,12 @@
 
 .rimage {
   width: 100%;
-  max-width: 100%;
-  margin-top: -50%;
+  margin-top: 30%;
 }
 
 @media (max-width: 768px) {
   .right-image {
-    display: none;
+    display:flex;
   }
 }  
   

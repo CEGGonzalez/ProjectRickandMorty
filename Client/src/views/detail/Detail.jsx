@@ -46,10 +46,10 @@ function Detail() {
             <h3>Origin:</h3>
             <p>{character.origin?.name}</p>
           </div>
-          <div>
+          {/* <div>
             <h3>Location:</h3>
             <p>{character.location?.name}</p>
-          </div>
+          </div> */}
         </div>
 
       </div>

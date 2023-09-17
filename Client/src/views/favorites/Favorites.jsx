@@ -26,6 +26,7 @@ export default function Favorites() {
   }
 
   return (
+    <div className={Styles.favorit}>
     <div className={Styles.fav}>
       <select className={Styles.select2} onChange={filterHandler}>
         {["Male", "Female", "unknown", "Genderless"].map((gender) => (
@@ -43,6 +44,7 @@ export default function Favorites() {
       </select>
       <button  className={Styles.boton} onClick={resetHandler}>RESET</button>
       <Cards characters={favorites} />
+    </div>
     </div>
   );
 }

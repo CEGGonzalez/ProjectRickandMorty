@@ -1,7 +1,7 @@
 import  {useState, useEffect} from "react";
 import "./App.css";
 import Cards from "./components/Cards/Cards.jsx";
-import Nav from "./components/NavBar/Nav.jsx";
+import Navbar from "./components/nav/navBar";
 import axios from "axios";
 import {Route, Routes, useLocation,  useNavigate} from "react-router-dom";
 import About from "./views/about/About.jsx";
@@ -78,7 +78,7 @@ function App() {
   return (
     <div className='App'>
       {pathname !== "/" && (
-        <Nav
+        <Navbar
         onSearch={searchHandler}
         randomize={randomHandler}
         />

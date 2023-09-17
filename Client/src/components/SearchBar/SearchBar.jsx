@@ -8,32 +8,32 @@ export default function SearchBar({onSearch}) {
     event.preventDefault();
     setId(event.target.value);
   }
-  function handleRandomClick() {
-    const randomId = Math.floor(Math.random() * 826) + 1;
+  // function handleRandomClick() {
+  //   const randomId = Math.floor(Math.random() * 826) + 1;
 
-    onSearch(randomId);
+  //   onSearch(randomId);
 
-    setId("");
-  }
+  //   setId("");
+  // }
 
   return (
     <div className={styles.SearchBar}>
-       <button className={styles.random}  onClick={handleRandomClick}>
+       {/* <button className={styles.random}  onClick={handleRandomClick}>
             Random
-          </button>
-      <input className={styles.Imput}
+          </button> */}
+      {/* <input className={styles.Imput}
         type="search"
         value={id}
         placeholder="Search"
         onChange={changeHandler}
-      />
-      <button className={styles.boton}
+      /> */}
+      {/* <button className={styles.boton}
         onClick={() => {
           onSearch(id);
         }}
       >
       To Add
-      </button>
+      </button> */}
     </div>
   );
 }

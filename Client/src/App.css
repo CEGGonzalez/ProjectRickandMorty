@@ -9,7 +9,7 @@
   
  }
 
-@keyframes spin {
+/* @keyframes spin {
 
   from {
      transform: rotate( 0deg );
@@ -18,7 +18,7 @@
   to {
      transform: rotate( 360deg );
   }
-  }
+  } */
 
 html {
      height: 100%;
@@ -43,7 +43,7 @@ body {
      z-index: 10;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 928px) {
     .contenedor-grid {
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;

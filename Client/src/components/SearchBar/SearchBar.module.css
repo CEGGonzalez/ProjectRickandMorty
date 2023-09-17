@@ -1,12 +1,15 @@
 .SearchBar {
     align-items: baseline;
-    display: inline-block;
+    display: flex;
     justify-content: space-around;
     padding: 0 ;
     margin: 5px;
+    position: fixed;
+    left: 80%;            
 }
 
 .Imput {
+  left: 100%;
   text-decoration: none;
   border: solid #39ff14 1px;
   background: rgb(44, 46, 49);
