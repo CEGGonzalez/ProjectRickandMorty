@@ -29,17 +29,17 @@ const About = () => {
     <img className="rimage" src={rimage} alt="" width="40px"/>
         </div>
         <ul className="icons">
-          <a href="https://www.instagram.com/">
-            <img src={instagram} alt="" width="40px" target="blank"/>
+          <a href="https://www.instagram.com/" target="blank">
+            <img src={instagram} alt="" width="40px"/>
           </a>
-          <a href="https://www.twitter.com/">
-            <img src={twitter} alt="" width="40px" target="blank"/>
+          <a href="https://www.twitter.com/" target="blank">
+            <img src={twitter} alt="" width="40px"/>
           </a>
-          <a href="https://github.com/CEGGonzalez/ProjectRickandMorty">
-            <img src={github} alt="" width="40px"  target="blank"/>
+          <a href="https://github.com/CEGGonzalez/ProjectRickandMorty" target="blank">
+            <img src={github} alt="" width="40px"/>
           </a>
-          <a href="https://www.linkedin.com/in/carlosenriquegonzalezgonzalez/">
-            <img src={linkedin} alt="" width="40px" target="blank"/>
+          <a href="https://www.linkedin.com/in/carlosenriquegonzalezgonzalez/" target="blank">
+            <img src={linkedin} alt="" width="40px"/>
           </a>
         </ul>
       </div>

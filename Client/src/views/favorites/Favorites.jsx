@@ -43,7 +43,7 @@ export default function Favorites() {
           </option>
         ))}
       </select>
-      <button  className={Styles.boton} onClick={resetHandler}>Random </button>
+      <button  className={Styles.boton} onClick={resetHandler}>Reset </button>
       <Cards characters={favorites} />
     </div>
     </div>
